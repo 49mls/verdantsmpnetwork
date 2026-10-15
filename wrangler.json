@@ -1,0 +1,22 @@
+{
+  "name": "verdantsmpnetwork",
+  "main": "worker.js",
+  "compatibility_date": "2026-08-12",
+  "vars": {
+    "SERVER": "crystalvanilla.falix.gg:20111"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "EAGLER_PROXY",
+        "class_name": "EaglerProxy"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["EaglerProxy"]
+    }
+  ]
+}
